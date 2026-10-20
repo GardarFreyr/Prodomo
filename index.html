@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRODOMO fasteignasala — hugmynd að forsíðu</title>
+<meta name="description" content="Fagleg fasteignamiðlun með persónulegri þjónustu á Suðurnesjum. Sýnishorn af nýrri forsíðu fyrir PRODOMO fasteignasölu, Hafnargötu 15, Keflavík.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#18342E">
+<meta property="og:title" content="PRODOMO fasteignasala">
+<meta property="og:description" content="Næsti kafli byrjar hér.">
+<meta property="og:image" content="img/sunnubraut.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8F7F4}
+a{color:#18342E}a:hover{color:#7A6544}
+.pd{container-type:inline-size;container-name:pd;font-family:'Manrope',system-ui,sans-serif;color:#18342E;background:#F8F7F4;-webkit-font-smoothing:antialiased}
+.pd *{box-sizing:border-box}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding-left:48px;padding-right:48px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-burger{display:none}
+.nav-link{color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:12px 0}
+.nav-link:hover{color:#E6D9C2}
+.hero{position:relative;min-height:860px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#18342E}
+.hero-img{position:absolute;left:0;right:0;bottom:0;width:100%;height:118%;object-fit:cover;object-position:center bottom;transform-origin:center bottom;animation:pdZoom 2.8s cubic-bezier(.2,.7,.2,1) both}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,28,.55) 0%,rgba(14,32,28,0) 22%,rgba(14,32,28,0) 45%,rgba(14,32,28,.72) 100%)}
+.hero-h1{font-size:132px;line-height:0.92;margin:0}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:background .25s ease,color .25s ease,transform .25s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-light{background:#F8F7F4;color:#18342E}.btn-light:hover{background:#FFFFFF;color:#18342E}
+.btn-ghost{background:transparent;color:#FFFFFF;border-color:rgba(255,255,255,.55)}.btn-ghost:hover{background:rgba(255,255,255,.12);color:#FFFFFF}
+.btn-green{background:#18342E;color:#F8F7F4}.btn-green:hover{background:#0F241F;color:#F8F7F4}
+.btn-gold{background:#B49B74;color:#13261F}.btn-gold:hover{background:#C6AF8A;color:#13261F}
+.search{position:relative;z-index:2;margin-top:-76px}
+.search-grid{display:grid;grid-template-columns:1.2fr 1.2fr 1fr auto;gap:20px;align-items:end}
+.field-label{display:block;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#5A6560;margin-bottom:10px}
+.select,.input,.textarea{width:100%;min-height:52px;border:1px solid #D9D7D0;background:#FFFFFF;border-radius:10px;padding:0 16px;font-family:inherit;font-size:15px;color:#18342E;}
+.textarea{min-height:120px;padding:14px 16px;resize:vertical}
+.select:focus,.input:focus,.textarea:focus{outline:2px solid #B49B74;outline-offset:1px;border-color:#B49B74}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #D9D7D0;background:#FFFFFF;font-family:inherit;font-size:14px;font-weight:500;color:#18342E;cursor:pointer;transition:all .2s ease}
+.pill:hover{border-color:#18342E}
+.pill.is-on{background:#18342E;border-color:#18342E;color:#F8F7F4}
+.grid-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+.card{display:flex;flex-direction:column;text-decoration:none;color:#18342E}
+.card:hover{color:#18342E}
+.card-media{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/3;background:#EBEAE6}
+.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.card:hover .card-media img{transform:scale(1.045)}
+.card-tag{position:absolute;left:14px;top:14px;background:rgba(248,247,244,.94);color:#18342E;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:7px 11px;border-radius:999px}
+.card-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;border-bottom:1px solid #B49B74;padding-bottom:3px;align-self:flex-start}
+.card:hover .card-link{color:#7A6544}
+.sec{padding-top:144px;padding-bottom:144px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:56px}
+.h2{font-size:76px;line-height:1;margin:0}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:96px;align-items:start}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #D9D7D0}
+.fact{padding:28px 24px 0 0}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.service{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #DEDCD5;font-size:16px;line-height:1.5}
+.agents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.agent-photo{aspect-ratio:4/4.6;overflow:hidden;border-radius:4px;background:#5d6461}
+.agent-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)}
+.val{background:#18342E;color:#F8F7F4}
+.val-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px;align-items:start}
+.val .field-label{color:#C9D1CD}
+.val .input,.val .select,.val .textarea{background:#20403A;border-color:#3B5A53;color:#F8F7F4}
+.form-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.full{grid-column:1/-1}
+.steps{display:flex;flex-direction:column;gap:0;border-top:1px solid #3B5A53}
+.step{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:24px 0;border-bottom:1px solid #3B5A53}
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:96px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+.foot a{color:#E6E9E7;text-decoration:none}.foot a:hover{color:#E6D9C2}
+.mobile-menu{display:none}
+@keyframes pdZoom{from{transform:scale(1.09)}to{transform:scale(1)}}
+@keyframes pdRise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+.rise-in{animation:pdRise 1.2s cubic-bezier(.2,.7,.2,1) .25s both}
+@supports (animation-timeline: view()){.reveal{animation:pdRise linear both;animation-timeline:view();animation-range:entry 0% cover 22%}}
+@media (prefers-reduced-motion: reduce){.reveal,.rise-in,.hero-img{animation:none}.card-media img{transition:none}}
+@container pd (max-width: 1100px){
+.hero-h1{font-size:104px}.h2{font-size:60px}
+.search-grid{grid-template-columns:1fr 1fr}
+.grid-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.about-grid,.val-grid,.contact-grid{gap:56px}
+.foot-grid{grid-template-columns:1fr 1fr}
+}
+@container pd (max-width: 760px){
+.wrap{padding-left:20px;padding-right:20px}
+.nav-links{display:none}.nav-burger{display:inline-flex}.hero-cap{display:none}
+.mobile-menu{display:block}
+.hero{min-height:680px}
+.hero-h1{font-size:60px;line-height:0.96}
+.hero-scrim{background:linear-gradient(180deg,rgba(14,32,28,.6) 0%,rgba(14,32,28,.38) 30%,rgba(14,32,28,.62) 60%,rgba(14,32,28,.88) 100%)}
+.hero-row{gap:28px}
+.hero-ctas{width:100%}.hero-ctas .btn{flex:1 1 100%}
+.search{margin-top:-40px}
+.search-grid{grid-template-columns:1fr}
+.grid-list,.agents,.services,.facts,.form-2{grid-template-columns:1fr}
+.about-grid,.val-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+.sec{padding-top:88px;padding-bottom:88px}
+.h2{font-size:46px}
+.sec-head{margin-bottom:36px}
+.fact{padding:22px 0;border-bottom:1px solid #D9D7D0}
+.foot-grid{grid-template-columns:1fr;gap:36px}
+.agent-photo{aspect-ratio:4/3.6}
+}
+</style>
+<style>[hidden]{display:none!important}html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}</style>
+</head>
+<body>
+<div class="pd" style="width: 100%; min-height: 100%;">
+
+<!-- Demo ribbon -->
+<div style="background: #EBEAE6; color: #18342E; font-size: 12.5px; line-height: 1.5; text-align: center; padding: 9px 20px;">
+<strong style="font-weight: 700;">Sýnishorn</strong> — ókeypis og óskuldbindandi tillaga að nýrri forsíðu. Eignir, verð og myndir eru sóttar af prodomo.is 20. október 2026.
+</div>
+
+<!-- 1. HERO -->
+<header class="hero">
+<img class="hero-img" src="img/sunnubraut.jpg" alt="Einbýlishús við Sunnubraut í Garði með útsýni til hafs">
+<div class="hero-scrim" aria-hidden="true"></div>
+
+<nav aria-label="Aðalvalmynd" style="position: absolute; top: 0; left: 0; right: 0; z-index: 3;">
+<div class="wrap" style="display: flex; justify-content: space-between; align-items: center; padding-top: 28px; padding-bottom: 28px;">
+<a href="#" style="text-decoration: none; color: #FFFFFF; display: flex; flex-direction: column; gap: 3px;" aria-label="PRODOMO fasteignasala, forsíða">
+<span style="font-size: 22px; font-weight: 700; letter-spacing: 0.26em;">PRODOMO</span>
+<span style="font-size: 9.5px; font-weight: 600; letter-spacing: 0.46em; color: #E6D9C2;">FASTEIGNASALA</span>
+</a>
+<div class="nav-links">
+<a class="nav-link" href="#eignir">Eignir</a>
+<a class="nav-link" href="#verdmat">Verðmat</a>
+<a class="nav-link" href="#um">Um okkur</a>
+<a class="nav-link" href="#starfsfolk">Starfsfólk</a>
+<a class="nav-link" href="#samband">Hafa samband</a>
+<a class="btn btn-ghost" href="tel:+3544204030" style="min-height: 44px; padding: 0 20px; font-size: 14px;">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+420 4030</a>
+</div>
+<button class="nav-burger" type="button" id="burger" aria-label="Opna valmynd" aria-expanded="false" aria-controls="mmenu" style="width: 48px; height: 48px; align-items: center; justify-content: center; border-radius: 999px; border: 1px solid rgba(255,255,255,.55); background: transparent; color: #FFFFFF; cursor: pointer;">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+</button>
+</div>
+<div id="mmenu" hidden class="mobile-menu" style="margin: 0 12px; background: #F8F7F4; border-radius: 16px; padding: 12px 20px 20px; box-shadow: 0 24px 60px rgba(10,24,20,.28);">
+<a href="#eignir" data-close style="display: block; padding: 14px 0; border-bottom: 1px solid #E2E0DA; text-decoration: none; font-size: 17px; font-weight: 500;">Eignir</a>
+<a href="#verdmat" data-close style="display: block; padding: 14px 0; border-bottom: 1px solid #E2E0DA; text-decoration: none; font-size: 17px; font-weight: 500;">Verðmat</a>
+<a href="#um" data-close style="display: block; padding: 14px 0; border-bottom: 1px solid #E2E0DA; text-decoration: none; font-size: 17px; font-weight: 500;">Um okkur</a>
+<a href="#starfsfolk" data-close style="display: block; padding: 14px 0; border-bottom: 1px solid #E2E0DA; text-decoration: none; font-size: 17px; font-weight: 500;">Starfsfólk</a>
+<a href="#samband" data-close style="display: block; padding: 14px 0; text-decoration: none; font-size: 17px; font-weight: 500;">Hafa samband</a>
+<a class="btn btn-green" href="tel:+3544204030" style="width: 100%; margin-top: 8px;">Hringja í 420 4030</a>
+</div>
+</nav>
+
+<div class="wrap rise-in" style="position: relative; z-index: 1; padding-bottom: 136px; color: #FFFFFF;">
+<p class="eyebrow" style="margin: 0 0 28px; color: #E6D9C2;">Fasteignasala á Suðurnesjum · Síðan 2014</p>
+<div class="hero-row">
+<h1 class="serif hero-h1">Næsti kafli<br><em style="font-style: italic; color: #E6D9C2;">byrjar hér.</em></h1>
+<div style="max-width: 400px; display: flex; flex-direction: column; gap: 28px;">
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #EEF1EF;">Fagleg fasteignamiðlun með persónulegri þjónustu á Suðurnesjum.</p>
+<div class="hero-ctas" style="display: flex; gap: 12px; flex-wrap: wrap;">
+<a class="btn btn-light" href="#eignir">Skoða eignir
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn btn-ghost" href="#verdmat">Óska eftir verðmati</a>
+</div>
+</div>
+</div>
+</div>
+<p style="position: absolute; right: 48px; bottom: 100px; z-index: 1; margin: 0; font-size: 12px; color: rgba(255,255,255,.82); letter-spacing: 0.04em;" class="hero-cap">Sunnubraut, 250 Garður — í sölu hjá PRODOMO</p>
+</header>
+
+<!-- 2. SEARCH -->
+<section class="search" aria-labelledby="leit-h">
+<div class="wrap">
+<div style="background: #FFFFFF; border-radius: 18px; padding: 32px; box-shadow: 0 30px 80px rgba(24,52,46,.12), 0 2px 6px rgba(24,52,46,.05);">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
+<h2 id="leit-h" class="serif" style="margin: 0; font-size: 34px; line-height: 1.1;">Finndu rétta eign</h2>
+<p style="margin: 0; font-size: 14px; color: #5A6560;" aria-live="polite"><strong style="color: #18342E;"><span id="count">6 eignir</span></strong> af úrvali hér að neðan</p>
+</div>
+<div class="search-grid">
+<div>
+<span class="field-label" id="teg-l">Tegund eignar</span>
+<div class="pills" role="group" aria-labelledby="teg-l">
+<button type="button" class="pill is-on" data-type="all" aria-pressed="true">Allar</button>
+<button type="button" class="pill" data-type="Einbýli" aria-pressed="false">Einbýli</button>
+<button type="button" class="pill" data-type="Raðhús" aria-pressed="false">Raðhús</button>
+<button type="button" class="pill" data-type="Fjölbýli" aria-pressed="false">Fjölbýli</button>
+</div>
+</div>
+<div>
+<label class="field-label" for="svaedi">Svæði</label>
+<select id="svaedi" class="select">
+<option value="all">Öll Suðurnes og Vogar</option>
+<option value="230 Keflavík">230 Keflavík</option>
+<option value="260 Njarðvík">260 Njarðvík</option>
+<option value="250 Garður">250 Garður</option>
+<option value="245 Sandgerði">245 Sandgerði</option>
+<option value="190 Vogar">190 Vogar</option>
+</select>
+</div>
+<div>
+<label class="field-label" for="verd">Hámarksverð</label>
+<select id="verd" class="select">
+<option value="0">Ekkert hámark</option>
+<option value="60000000">60 m.kr.</option>
+<option value="80000000">80 m.kr.</option>
+<option value="100000000">100 m.kr.</option>
+</select>
+</div>
+<a class="btn btn-green" href="https://prodomo.is/eignaskra" target="_blank" rel="noopener" style="white-space: nowrap;">Öll eignaskráin
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+</div>
+<p style="margin: 22px 0 0; padding-top: 18px; border-top: 1px solid #EBEAE6; font-size: 13px; line-height: 1.55; color: #5A6560;">Í þessu sýnishorni síar leitin aðeins þær sex eignir sem birtast hér á síðunni. Hún er ekki tengd við eignaskrá PRODOMO — „Öll eignaskráin“ opnar núverandi leit á prodomo.is.</p>
+</div>
+</div>
+</section>
+
+<!-- 3. LISTINGS -->
+<section id="eignir" class="sec" style="padding-top: 120px;" aria-labelledby="eignir-h">
+<div class="wrap">
+<div class="sec-head reveal">
+<div>
+<p class="eyebrow" style="margin: 0 0 18px; color: #7A6544;">01 — Eignir í sölu</p>
+<h2 id="eignir-h" class="serif h2">Valdar eignir</h2>
+</div>
+<p style="margin: 0; max-width: 380px; font-size: 15px; line-height: 1.6; color: #55605C;">Raunverulegar eignir af söluskrá PRODOMO. Smelltu á eign til að sjá allar upplýsingar og myndir á prodomo.is.</p>
+</div>
+
+<div class="grid-list" id="list">
+<a class="card reveal" data-type="Einbýli" data-zip="230 Keflavík" data-price="129900000" href="https://prodomo.is/eignaskra/eign/931573" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/heidarbol1.jpg" alt="Einbýli við Heiðarból, 230 Keflavík" loading="lazy">
+<span class="card-tag">Einbýli</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">230 Keflavík</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Heiðarból</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">129.900.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>218 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>5 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+<a class="card reveal" data-type="Einbýli" data-zip="250 Garður" data-price="76900000" href="https://prodomo.is/eignaskra/eign/926833" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/sunnubraut.jpg" alt="Einbýli við Sunnubraut, 250 Garður" loading="lazy">
+<span class="card-tag">Einbýli</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">250 Garður</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Sunnubraut</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">76.900.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>157 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>4 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+<a class="card reveal" data-type="Raðhús" data-zip="190 Vogar" data-price="86600000" href="https://prodomo.is/eignaskra/eign/928624" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/stadarborg.jpg" alt="Raðhús við Staðarborg, 190 Vogar" loading="lazy">
+<span class="card-tag">Raðhús</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">190 Vogar</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Staðarborg</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">86.600.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>131 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>5 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+<a class="card reveal" data-type="Raðhús" data-zip="245 Sandgerði" data-price="77900000" href="https://prodomo.is/eignaskra/eign/928086" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/skerjabraut.jpg" alt="Raðhús við Skerjabraut, 245 Sandgerði" loading="lazy">
+<span class="card-tag">Raðhús</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">245 Sandgerði</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Skerjabraut</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">77.900.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>145 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>4 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+<a class="card reveal" data-type="Fjölbýli" data-zip="230 Keflavík" data-price="69900000" href="https://prodomo.is/eignaskra/eign/930454" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/heidarvegur.jpg" alt="Fjölbýli við Heiðarvegur, 230 Keflavík" loading="lazy">
+<span class="card-tag">Fjölbýli</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">230 Keflavík</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Heiðarvegur</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">69.900.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>144 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>5 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+<a class="card reveal" data-type="Fjölbýli" data-zip="260 Njarðvík" data-price="49900000" href="https://prodomo.is/eignaskra/eign/932489" target="_blank" rel="noopener">
+<div class="card-media">
+<img src="img/beykidalur.jpg" alt="Fjölbýli við Beykidalur, 260 Njarðvík" loading="lazy">
+<span class="card-tag">Fjölbýli</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 22px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7A6544;">260 Njarðvík</span>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;">
+<h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.1;">Beykidalur</h3>
+<span style="font-size: 17px; font-weight: 600; white-space: nowrap;">49.900.000 kr.</span>
+</div>
+<div style="display: flex; gap: 18px; font-size: 14px; color: #55605C; padding: 12px 0 14px; border-top: 1px solid #E2E0DA; margin-top: 4px;">
+<span>70 m²</span><span aria-hidden="true" style="color: #B49B74;">·</span><span>2 herbergi</span>
+</div>
+<span class="card-link">Skoða eign <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+</div>
+</a>
+</div>
+
+<div id="empty" hidden style="background: #EBEAE6; border-radius: 12px; padding: 40px; text-align: center;">
+<p class="serif" style="margin: 0 0 10px; font-size: 30px;">Engin eign í þessu úrvali passar.</p>
+<p style="margin: 0 0 22px; font-size: 15px; color: #55605C;">Prófaðu aðrar síur eða skoðaðu alla eignaskrána á prodomo.is.</p>
+<button type="button" class="btn btn-green" id="reset">Hreinsa síur</button>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 64px; padding-top: 28px; border-top: 1px solid #D9D7D0;">
+<p style="margin: 0; font-size: 13px; color: #55605C;">Upplýsingar sóttar af prodomo.is 20.10.2026 og geta hafa breyst. Í lifandi útgáfu kæmu eignir beint úr eignaskrá.</p>
+<a class="btn btn-green" href="https://prodomo.is/eignaskra" target="_blank" rel="noopener">Sjá allar eignir í sölu</a>
+</div>
+</div>
+</section>
+
+<!-- 4. ABOUT -->
+<section id="um" class="sec" style="background: #EBEAE6;" aria-labelledby="um-h">
+<div class="wrap">
+<div class="about-grid">
+<div class="reveal">
+<p class="eyebrow" style="margin: 0 0 18px; color: #7A6544;">02 — Um PRODOMO</p>
+<h2 id="um-h" class="serif h2">Byggt á traustum grunni.</h2>
+<div style="margin-top: 44px; border-radius: 4px; overflow: hidden; aspect-ratio: 4/3;">
+<img src="img/heidarbol2.jpg" alt="Eign við Heiðarból í Keflavík, í sölu hjá PRODOMO" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+</div>
+<p style="margin: 12px 0 0; font-size: 12px; color: #55605C;">Heiðarból, 230 Keflavík</p>
+</div>
+<div class="reveal" style="padding-top: 8px;">
+<p class="serif" style="margin: 0 0 32px; font-size: 34px; line-height: 1.25;">PRODOMO fasteignasala var stofnuð 1. apríl 2014 og byggir á grunni Lögfræðistofu Suðurnesja, sem hefur starfað frá 1960.</p>
+<p style="margin: 0 0 20px; font-size: 17px; line-height: 1.7; color: #3E4A46;">Lögmenn stofunnar eru fasteignasölunni til ráðgjafar og búa yfir mikilli reynslu á sviði fasteignakauparéttar. Markmið okkar er að veita vandaða þjónustu á skilvirkan og traustan hátt — og bregðast alltaf fljótt við fyrirspurnum, svo viðskiptin gangi hratt og örugglega fyrir sig.</p>
+<div class="facts" style="margin: 48px 0 56px;">
+<div class="fact"><p class="serif" style="margin: 0 0 6px; font-size: 40px; line-height: 1;">2014</p><p style="margin: 0; font-size: 14px; color: #55605C;">PRODOMO stofnuð</p></div>
+<div class="fact"><p class="serif" style="margin: 0 0 6px; font-size: 40px; line-height: 1;">1960</p><p style="margin: 0; font-size: 14px; color: #55605C;">Lögfræðistofa Suðurnesja</p></div>
+<div class="fact"><p class="serif" style="margin: 0 0 6px; font-size: 40px; line-height: 1;">9–16</p><p style="margin: 0; font-size: 14px; color: #55605C;">Opið alla virka daga</p></div>
+</div>
+<p class="eyebrow" style="margin: 0 0 8px; color: #7A6544;">Þjónusta</p>
+<div class="services">
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">01</span><span>Sala íbúðar- og atvinnuhúsnæðis, lóða, fyrirtækja og skipa</span></div>
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">02</span><span>Verðmöt á öllum tegundum eigna</span></div>
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">03</span><span>Gerð leigusamninga og önnur skjalagerð</span></div>
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">04</span><span>Ráðgjöf vegna fasteignasölu og fasteignakaupa</span></div>
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">05</span><span>Ráðgjöf um fasteignakauparétt — lánamál, galla og vanefndir</span></div>
+<div class="service"><span style="color: #7A6544; font-size: 13px; padding-top: 3px;">06</span><span>Verðmöt fyrir einstaklinga, fyrirtæki og fjármálafyrirtæki</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. AGENTS -->
+<section id="starfsfolk" class="sec" aria-labelledby="folk-h">
+<div class="wrap">
+<div class="sec-head reveal">
+<div>
+<p class="eyebrow" style="margin: 0 0 18px; color: #7A6544;">03 — Starfsfólk</p>
+<h2 id="folk-h" class="serif h2">Fólkið á bak við söluna</h2>
+</div>
+<p style="margin: 0; max-width: 360px; font-size: 15px; line-height: 1.6; color: #55605C;">Hafðu beint samband við fasteignasalann þinn — eða hringdu á skrifstofuna í 420 4030.</p>
+</div>
+<div class="agents">
+<article class="reveal">
+<div class="agent-photo"><img src="img/lilja.jpg" alt="Lilja Valþórsdóttir" loading="lazy"></div>
+<p class="eyebrow" style="margin: 24px 0 8px; color: #7A6544; font-size: 11px;">Eigandi og ábyrgðarmaður</p>
+<h3 class="serif" style="margin: 0 0 4px; font-size: 32px; line-height: 1.1;">Lilja Valþórsdóttir</h3>
+<p style="margin: 0 0 18px; font-size: 15px; color: #55605C;">Löggiltur fasteignasali</p>
+<div style="display: flex; flex-direction: column; gap: 2px; border-top: 1px solid #E2E0DA; padding-top: 10px; font-size: 15px;">
+<a href="tel:+3548606886" style="text-decoration: none; padding: 8px 0;">860 6886</a>
+<a href="mailto:lilja@prodomo.is" style="text-decoration: none; padding: 8px 0;">lilja@prodomo.is</a>
+</div>
+</article>
+<article class="reveal">
+<div class="agent-photo"><img src="img/hakon.jpg" alt="Hákon Ólafur Hákonarson" loading="lazy"></div>
+<p class="eyebrow" style="margin: 24px 0 8px; color: #7A6544; font-size: 11px;">Fasteignasali</p>
+<h3 class="serif" style="margin: 0 0 4px; font-size: 32px; line-height: 1.1;">Hákon Ólafur Hákonarson</h3>
+<p style="margin: 0 0 18px; font-size: 15px; color: #55605C;">Löggiltur fasteignasali</p>
+<div style="display: flex; flex-direction: column; gap: 2px; border-top: 1px solid #E2E0DA; padding-top: 10px; font-size: 15px;">
+<a href="tel:+3548991298" style="text-decoration: none; padding: 8px 0;">899 1298</a>
+<a href="mailto:hakon@prodomo.is" style="text-decoration: none; padding: 8px 0;">hakon@prodomo.is</a>
+</div>
+</article>
+<article class="reveal">
+<div class="agent-photo"><img src="img/julia.jpg" alt="Júlía Elsa Ævarsdóttir" loading="lazy"></div>
+<p class="eyebrow" style="margin: 24px 0 8px; color: #7A6544; font-size: 11px;">Skrifstofa</p>
+<h3 class="serif" style="margin: 0 0 4px; font-size: 32px; line-height: 1.1;">Júlía Elsa Ævarsdóttir</h3>
+<p style="margin: 0 0 18px; font-size: 15px; color: #55605C;">Móttaka og skjalagerð</p>
+<div style="display: flex; flex-direction: column; gap: 2px; border-top: 1px solid #E2E0DA; padding-top: 10px; font-size: 15px;">
+<a href="tel:+3544204030" style="text-decoration: none; padding: 8px 0;">420 4030</a>
+<a href="mailto:julia@prodomo.is" style="text-decoration: none; padding: 8px 0;">julia@prodomo.is</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- 6. VALUATION -->
+<section id="verdmat" class="sec val" aria-labelledby="verdmat-h">
+<div class="wrap">
+<div class="val-grid">
+<div class="reveal">
+<p class="eyebrow" style="margin: 0 0 18px; color: #B49B74;">04 — Fyrir seljendur</p>
+<h2 id="verdmat-h" class="serif h2" style="color: #F8F7F4;">Hvers virði er <em style="font-style: italic; color: #D9C6A5;">eignin þín?</em></h2>
+<p style="margin: 32px 0 48px; font-size: 18px; line-height: 1.65; color: #C9D1CD; max-width: 480px;">Löggiltur fasteignasali metur eignina og fer með þér yfir næstu skref — hvort sem þú ert tilbúin(n) að selja eða vilt bara vita stöðuna.</p>
+<div class="steps">
+<div class="step"><span class="serif" style="font-size: 30px; color: #B49B74; line-height: 1;">I</span><div><p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">Þú sendir beiðni</p><p style="margin: 0; font-size: 15px; color: #C9D1CD; line-height: 1.55;">Með forminu, í síma 420 4030 eða beint til fasteignasala.</p></div></div>
+<div class="step"><span class="serif" style="font-size: 30px; color: #B49B74; line-height: 1;">II</span><div><p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">Við skoðum eignina</p><p style="margin: 0; font-size: 15px; color: #C9D1CD; line-height: 1.55;">Fasteignasali kemur, skoðar og ræðir við þig.</p></div></div>
+<div class="step"><span class="serif" style="font-size: 30px; color: #B49B74; line-height: 1;">III</span><div><p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">Þú færð verðmat</p><p style="margin: 0; font-size: 15px; color: #C9D1CD; line-height: 1.55;">Og ákveður sjálf(ur) hvort og hvenær eignin fer í sölu.</p></div></div>
+</div>
+<p style="margin: 32px 0 0; font-size: 13px; line-height: 1.6; color: #A9B6B1;">Samkvæmt gjaldskrá PRODOMO er söluþóknun 1,5% í einkasölu og 1,8% í almennri sölu, auk vsk.</p>
+</div>
+
+<div class="reveal" style="background: #1D3B35; border: 1px solid #2F4E47; border-radius: 18px; padding: 40px;">
+<div id="val-done" hidden style="padding: 24px 0; display: flex; flex-direction: column; gap: 16px;" role="status">
+<p class="serif" style="margin: 0; font-size: 34px; line-height: 1.15;">Þetta er sýnishorn — ekkert var sent.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9D1CD;">Í fullbúnum vef færi beiðnin beint til PRODOMO. Þangað til: hringdu í 420 4030 eða sendu póst á prodomo@prodomo.is.</p>
+<button type="button" class="btn btn-gold" data-back="val-form" style="align-self: flex-start; margin-top: 8px;">Til baka í formið</button>
+</div>
+<form id="val-form" data-done="val-done" novalidate>
+<p class="serif" style="margin: 0 0 6px; font-size: 30px;">Óska eftir verðmati</p>
+<p style="margin: 0 0 28px; font-size: 14px; color: #A9B6B1;">Sýnishorn — formið er ekki tengt og sendir ekki gögn.</p>
+<div class="form-2">
+<div><label class="field-label" for="v-nafn">Nafn</label><input id="v-nafn" class="input" type="text" autocomplete="name"></div>
+<div><label class="field-label" for="v-simi">Sími</label><input id="v-simi" class="input" type="tel" autocomplete="tel"></div>
+<div class="full"><label class="field-label" for="v-netf">Netfang</label><input id="v-netf" class="input" type="email" autocomplete="email"></div>
+<div class="full"><label class="field-label" for="v-heim">Heimilisfang eignar</label><input id="v-heim" class="input" type="text" placeholder="Gata, númer og póstnúmer"></div>
+<div class="full"><label class="field-label" for="v-teg">Tegund eignar</label>
+<select id="v-teg" class="select"><option>Einbýli</option><option>Raðhús / parhús</option><option>Fjölbýli</option><option>Atvinnuhúsnæði</option><option>Lóð / annað</option></select></div>
+<div class="full"><label class="field-label" for="v-ath">Athugasemdir</label><textarea id="v-ath" class="textarea"></textarea></div>
+</div>
+<button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 24px;">Senda beiðni um verðmat</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 7. CONTACT -->
+<section id="samband" class="sec" aria-labelledby="samband-h">
+<div class="wrap">
+<div class="contact-grid">
+<div class="reveal">
+<p class="eyebrow" style="margin: 0 0 18px; color: #7A6544;">05 — Hafa samband</p>
+<h2 id="samband-h" class="serif h2">Komdu við á Hafnargötu.</h2>
+<div style="margin-top: 48px; display: flex; flex-direction: column; border-top: 1px solid #D9D7D0;">
+<div style="padding: 22px 0; border-bottom: 1px solid #D9D7D0;"><p class="field-label" style="margin: 0 0 6px;">Skrifstofa</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Hafnargata+15+230+Keflav%C3%ADk" target="_blank" rel="noopener" style="font-size: 19px; text-decoration: none;">Hafnargata 15, 230 Keflavík</a></div>
+<div style="padding: 22px 0; border-bottom: 1px solid #D9D7D0;"><p class="field-label" style="margin: 0 0 6px;">Sími</p><a href="tel:+3544204030" style="font-size: 19px; text-decoration: none;">420 4030</a></div>
+<div style="padding: 22px 0; border-bottom: 1px solid #D9D7D0;"><p class="field-label" style="margin: 0 0 6px;">Netfang</p><a href="mailto:prodomo@prodomo.is" style="font-size: 19px; text-decoration: none;">prodomo@prodomo.is</a></div>
+<div style="padding: 22px 0; border-bottom: 1px solid #D9D7D0;"><p class="field-label" style="margin: 0 0 6px;">Opnunartími</p><p style="margin: 0; font-size: 19px;">Alla virka daga 9:00–16:00</p></div>
+</div>
+</div>
+
+<div class="reveal" style="background: #FFFFFF; border-radius: 18px; padding: 40px; border: 1px solid #E6E4DE;">
+<div id="contact-done" hidden style="padding: 24px 0; display: flex; flex-direction: column; gap: 16px;" role="status">
+<p class="serif" style="margin: 0; font-size: 34px; line-height: 1.15;">Þetta er sýnishorn — ekkert var sent.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #55605C;">Í fullbúnum vef færu skilaboðin beint á prodomo@prodomo.is.</p>
+<button type="button" class="btn btn-green" data-back="contact-form" style="align-self: flex-start; margin-top: 8px;">Til baka í formið</button>
+</div>
+<form id="contact-form" data-done="contact-done" novalidate>
+<p class="serif" style="margin: 0 0 6px; font-size: 30px;">Sendu okkur línu</p>
+<p style="margin: 0 0 28px; font-size: 14px; color: #55605C;">Sýnishorn — formið er ekki tengt og sendir ekki gögn.</p>
+<div class="form-2">
+<div><label class="field-label" for="c-nafn">Nafn</label><input id="c-nafn" class="input" type="text" autocomplete="name"></div>
+<div><label class="field-label" for="c-simi">Sími</label><input id="c-simi" class="input" type="tel" autocomplete="tel"></div>
+<div class="full"><label class="field-label" for="c-netf">Netfang</label><input id="c-netf" class="input" type="email" autocomplete="email"></div>
+<div class="full"><label class="field-label" for="c-efni">Efni</label>
+<select id="c-efni" class="select"><option>Ég vil kaupa eign</option><option>Ég vil selja eign</option><option>Fyrirspurn um ákveðna eign</option><option>Leigusamningur / skjalagerð</option><option>Annað</option></select></div>
+<div class="full"><label class="field-label" for="c-skil">Skilaboð</label><textarea id="c-skil" class="textarea"></textarea></div>
+</div>
+<button type="submit" class="btn btn-green" style="width: 100%; margin-top: 24px;">Senda skilaboð</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot" style="background: #18342E; color: #E6E9E7; padding: 96px 0 40px;">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<p style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: 0.26em; color: #FFFFFF;">PRODOMO</p>
+<p style="margin: 6px 0 28px; font-size: 10px; font-weight: 600; letter-spacing: 0.46em; color: #B49B74;">FASTEIGNASALA</p>
+<p class="serif" style="margin: 0; font-size: 30px; line-height: 1.2; max-width: 360px; color: #F8F7F4;">Næsti kafli byrjar hér.</p>
+</div>
+<div>
+<p class="eyebrow" style="margin: 0 0 18px; color: #B49B74;">Vefur</p>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 15px;">
+<a href="#eignir" style="padding: 6px 0;">Eignir</a><a href="#verdmat" style="padding: 6px 0;">Verðmat</a><a href="#um" style="padding: 6px 0;">Um okkur</a><a href="#starfsfolk" style="padding: 6px 0;">Starfsfólk</a>
+</div>
+</div>
+<div>
+<p class="eyebrow" style="margin: 0 0 18px; color: #B49B74;">Samband</p>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 15px;">
+<a href="tel:+3544204030" style="padding: 6px 0;">420 4030</a><a href="mailto:prodomo@prodomo.is" style="padding: 6px 0;">prodomo@prodomo.is</a><a href="https://www.facebook.com/prodomofasteignasala" target="_blank" rel="noopener" style="padding: 6px 0;">Facebook</a>
+</div>
+</div>
+<div>
+<p class="eyebrow" style="margin: 0 0 18px; color: #B49B74;">Skrifstofa</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.8;">Hafnargata 15<br>230 Keflavík<br>Virka daga 9–16</p>
+</div>
+</div>
+<div style="margin-top: 80px; padding-top: 28px; border-top: 1px solid #2F4E47; display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 12.5px; line-height: 1.6; color: #A9B6B1;">
+<p style="margin: 0;">PRODOMO ehf. · kt. 640507-3300 · Ábyrgðarmaður: Lilja Valþórsdóttir, löggiltur fasteignasali</p>
+<p style="margin: 0; max-width: 560px;">Ókeypis, óskuldbindandi sýnishorn af forsíðu. Fullbúinn vefur með lifandi tengingu við eignaskrá krefst sérstakrar tæknilegrar greiningar og verðtilboðs.</p>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var state = { type: 'all', area: 'all', max: 0 };
+  var cards = [].slice.call(document.querySelectorAll('#list .card'));
+  var pills = [].slice.call(document.querySelectorAll('.pill[data-type]'));
+  var area = document.getElementById('svaedi'), price = document.getElementById('verd');
+  function apply() {
+    var n = 0;
+    cards.forEach(function (c) {
+      var ok = (state.type === 'all' || c.dataset.type === state.type) && (state.area === 'all' || c.dataset.zip === state.area) && (!state.max || Number(c.dataset.price) <= state.max);
+      c.hidden = !ok; if (ok) n++;
+    });
+    pills.forEach(function (p) { var on = p.dataset.type === state.type; p.classList.toggle('is-on', on); p.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    document.getElementById('count').textContent = n === 1 ? '1 eign' : n + ' eignir';
+    document.getElementById('empty').hidden = n !== 0;
+  }
+  pills.forEach(function (p) { p.addEventListener('click', function () { state.type = p.dataset.type; apply(); }); });
+  area.addEventListener('change', function () { state.area = area.value; apply(); });
+  price.addEventListener('change', function () { state.max = Number(price.value); apply(); });
+  document.getElementById('reset').addEventListener('click', function () { state = { type: 'all', area: 'all', max: 0 }; area.value = 'all'; price.value = '0'; apply(); });
+
+  var burger = document.getElementById('burger'), menu = document.getElementById('mmenu');
+  function setMenu(open) { menu.hidden = !open; burger.setAttribute('aria-expanded', open ? 'true' : 'false'); burger.setAttribute('aria-label', open ? 'Loka valmynd' : 'Opna valmynd'); }
+  burger.addEventListener('click', function () { setMenu(menu.hidden); });
+  [].forEach.call(menu.querySelectorAll('[data-close]'), function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+
+  [].forEach.call(document.querySelectorAll('form[data-done]'), function (f) {
+    var done = document.getElementById(f.dataset.done);
+    f.addEventListener('submit', function (e) { e.preventDefault(); f.hidden = true; done.hidden = false; });
+    done.querySelector('[data-back]').addEventListener('click', function () { done.hidden = true; f.hidden = false; });
+  });
+})();
+</script>
+</body>
+</html>
